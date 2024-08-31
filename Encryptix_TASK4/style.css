@@ -1,0 +1,303 @@
+body{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    background-image: url(./images/bg_image.jpg);
+    background-size: contain;
+}
+header{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+header h1{
+    margin-left: 5rem;
+    font-weight:bolder;
+    font-size: 40px;
+}
+header h1 strong{
+    text-align: center;
+    background: linear-gradient(to right, rgb(3, 240, 188), rgb(255, 0, 43));
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.head1{
+    color: wheat;
+    margin-left: -23rem;
+    margin-top: 8.5rem;
+}
+.head2{
+    color: wheat;
+    margin-left: 2rem;
+}
+header h2{
+    color: wheat;
+    margin-left: 1rem;
+}
+
+header img{
+    width: 40rem;
+    height: 28rem;
+    background-size: cover;
+    transform: translate(10rem,2rem);
+}
+
+#box{
+    height: 300px;
+    width: 400px;
+    background-color: #2f2f2f;
+    position: relative;
+    padding: 8px;
+    overflow: hidden;
+    left: 21rem;
+    top:1rem;
+    margin-left: 10rem;
+}
+
+#in{
+    height: 100%;
+    width: 100%;
+    background-color: #111;
+    position: relative;
+    z-index: 99;
+    background-image: url(./images/pic1.jpg);
+    object-fit:fill;
+    background-size:100%;
+    filter: grayscale(40%);
+}
+#in:hover{
+    filter: grayscale(0%);
+}
+#box::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+    height: 580px;
+    width: 200px;
+    background-color: white;
+    animation:move 1.5s infinite;
+}
+
+@keyframes move {
+    100%{
+        transform: translate(-50%,-50%) rotate(225deg);
+    }
+}
+.about{
+    color:whitesmoke;
+}
+.about h1{
+    font-size: 35px;
+    position: relative;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+.about h1:before{
+    content: "";
+    display: block;
+    width: 490px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+.about h1:after{
+    content: "";
+    display: block;
+    width: 490px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+.about p{
+    font-size: 25px;
+    margin: 7rem 3rem 0 5rem;
+    text-align: center;
+    text-decoration:solid 2px aqua;
+    background: linear-gradient(to right, rgb(3, 240, 188), rgb(231, 115, 6));
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.about div img{
+    width: 600px;
+    height: 400px;
+    background-size:cover;
+    margin-top: -1rem;
+    filter:grayscale(30%);
+}
+.about div img:hover{
+    filter:grayscale(0%);
+}
+.ab-sec{
+    display: flex;
+}
+table{
+    color: white;
+    margin-left: 10rem;
+    width: 70%;
+    text-align: center;
+    font-size: 50px;
+    border-collapse: collapse;
+}
+table,thead,tbody{
+    border: 2px solid aqua;
+}
+.h11{
+    color: white;
+    width: 500px;
+    background-color: blue;
+    text-align: center;
+    margin-left: 26rem;
+}
+thead{
+    color: darksalmon;
+}
+/* table:hover{
+    color: aqua;
+} */
+ .personal{
+    margin-top: 4rem;
+ }
+ .personal h1{
+    color: white;
+    text-align: center;
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ .person::after{
+    content: " ";
+    position: absolute;
+    left:35rem;
+    bottom:1px;
+    height: 3px;
+    width: 0%;
+    background-color: rgb(197, 197, 8);
+    transition: all ease 1s;
+ }
+ .person:hover::after{
+    width: 17%;
+ }
+ .head3{
+    display: flex;
+ }
+ .head3 p{
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    background: linear-gradient(to right, rgb(218, 214, 7), rgb(17, 233, 204));
+    color: transparent;
+    -webkit-background-clip: text;
+ }
+ .head3 img{
+    width: 500px;
+    height: 400px;
+ }
+ .quotes{
+    width: 100%;
+    height: 20rem;
+    margin-top: 5rem;
+}
+.quotes h1{
+    text-align: center;
+    color:black;
+    font-weight: 800;
+    text-decoration: solid;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.quotes img{
+    height: 350px;
+    width: 350px;
+    margin-left: 62rem;
+    filter: grayscale(20%);
+}
+.quotes img:hover{
+    filter: grayscale(0%);
+}
+.quotes ul{
+    margin-top: -10rem;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.quotes ul li{
+    margin-top: 4px;
+    color:aquamarine;
+}
+ .achievement{
+    margin-top: 17rem;
+ }
+ .achievement h1{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 35px;
+    position: relative;
+ }
+ .achievement h1::after{
+    content: " ";
+    position: absolute;
+    left:34rem;
+    bottom:3px;
+    height: 3px;
+    width: 0%;
+    background-color: rgb(197, 197, 8);
+    transition: all ease 1s;
+ }
+ .achievement h1:hover::after{
+    width: 20%;
+ }
+ .achievement img{
+    margin-top: -4rem;
+    margin-left: 37rem;
+    width: 700px;
+    height: 600px;
+    transform: translateY(-0.5rem);
+}
+.head4{
+    display: flex;
+    flex-wrap: wrap;
+}
+.head4 p{
+    width: 100%;
+    font-size: 30px;
+    margin-left: 3rem;
+}
+.head5{
+    margin-top: -34rem;
+    margin-left: 9rem;
+}
+.head5 p{
+    font-weight: 700;
+    color: gold;
+}
+.head6 h2{
+    margin-left: 2rem;
+}
+.head6 p{
+    margin-left: 7rem;
+}
+.hh{
+    background: linear-gradient(to right, red, blue);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.h6ii, .h6iii{
+    color:gold;
+    font-weight: 700;
+}
+.h4i{
+    text-decoration: solid black;
+    font-weight: 800;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.h6i{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
